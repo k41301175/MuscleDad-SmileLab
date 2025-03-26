@@ -1,3 +1,9 @@
+---
+layout: default
+title: README
+permalink: /readme/
+---
+
 # MuscleDad-SmileLab
 
 ## 覚書
