@@ -1,2 +1,5 @@
 markdown: kramdown
 theme: minima
+include:
+  - README.md
+  - doc1.md
