@@ -3,3 +3,5 @@ theme: minima
 include:
   - README.md
   - doc1.md
+  - PrivacyPolicy.md
+  - PrivacyPolicy_en.md
