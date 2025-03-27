@@ -1,6 +1,6 @@
 ---
 layout: default
-title: README
+title: ATTN対応
 permalink: /doc1.html
 ---
 
