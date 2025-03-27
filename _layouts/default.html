@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: "MuscleDad-SmileLab" }}</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+      },
+      plugins: [tailwindcss.typography],
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -23,8 +31,10 @@
     </nav>
   </header>
 
-  <main>
-    {{ content }}
+  <main class="px-4 py-10">
+    <div class="prose prose-invert max-w-3xl mx-auto">
+      {{ content }}
+    </div>
   </main>
 
   <footer class="text-center text-gray-500 text-sm py-10">
