@@ -13,7 +13,7 @@ permalink: /doc1.html
 Package ManagerのUnity RegistryからiOS 14 Advertising Supportをインストール
 
 2. UnityEditorで、コードを作成
-以下のコードを作成し、ゲームのトップシーンの空のゲームオブジェクトにアタッチする。
+以下のコードを作成し、ゲームのトップシーンの空のゲームオブジェクトにアタッチする。  
 ```
 using UnityEngine;
 
