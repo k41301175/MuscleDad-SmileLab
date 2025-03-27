@@ -14,6 +14,7 @@ Package ManagerのUnity RegistryからiOS 14 Advertising Supportをインスト�
 
 2. UnityEditorで、コードを作成
 以下のコードを作成し、ゲームのトップシーンの空のゲームオブジェクトにアタッチする。  
+
 ```
 using UnityEngine;
 
@@ -35,9 +36,11 @@ public class ATTRequest : MonoBehaviour
     }
 }
 ```
+
 3. ビルド時に実行するスクリプトを作成
 UnityでEditorフォルダ内に、以下のスクリプトを作成し、保存する。  
 (シーンにアタッチしなくて大丈夫)
+
 ```
 using UnityEditor;
 using UnityEditor.Build;
@@ -80,6 +83,7 @@ public class PostBuildProcessing : IPostprocessBuildWithReport
     }
 }
 ```
+
 これにより、ビルド実行時に自動的にplistに追加してくれるようになりますので、通常の手順通りにビルド可能です。
 
 ##### その他
