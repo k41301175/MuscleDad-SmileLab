@@ -1,6 +1,7 @@
 markdown: kramdown
 theme: minima
 baseurl: ""
+highlighter: rouge
 include:
   - README.md
   - PrivacyPolicy.md
