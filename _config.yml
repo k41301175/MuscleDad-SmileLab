@@ -1,5 +1,6 @@
 markdown: kramdown
 theme: minima
+baseurl: ""
 include:
   - README.md
   - PrivacyPolicy.md
