@@ -1,7 +1,7 @@
 ---
-layout: default
-title: ATTN対応
-permalink: /doc1.html
+layout: post
+title: "ATTN対応"
+date: 2025-03-28
 ---
 
 
@@ -15,7 +15,7 @@ Package ManagerのUnity RegistryからiOS 14 Advertising Supportをインスト�
 2. UnityEditorで、コードを作成
 以下のコードを作成し、ゲームのトップシーンの空のゲームオブジェクトにアタッチする。  
 
-```
+```#C#
 using UnityEngine;
 
 #if UNITY_IOS
@@ -41,7 +41,7 @@ public class ATTRequest : MonoBehaviour
 UnityでEditorフォルダ内に、以下のスクリプトを作成し、保存する。  
 (シーンにアタッチしなくて大丈夫)
 
-```
+```#C#
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
