@@ -4,6 +4,8 @@ title: プライバシーポリシー
 permalink: /privacy_jp.html
 ---
 
+English page is [here](/privacy_en.html)
+
 ## プライバシーポリシー
 
 1. **はじめに**  
