@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: "マッスルパパのスマイル工房" }}</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <!-- Prism.js CSS（ダークテーマ例：Tomorrow Night） -->
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -15,7 +15,6 @@
       plugins: [tailwindcss.typography],
     }
   </script>
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -23,17 +22,22 @@
   </style>
 </head>
 <body class="bg-gray-950 text-white">
-  <header class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-    <h1 class="text-xl font-bold text-blue-400">
-      <a href="/index.html">マッスルパパのスマイル工房</a>
-    </h1>
-    <nav class="space-x-6 text-sm font-medium">
-      <a href="/index.html" class="hover:text-blue-400">ホーム</a>
-      <a href="#" class="hover:text-blue-400">アプリ</a>
-      <a href="/blog.html" class="hover:text-blue-400">ブログ</a>
-      <a href="#" class="hover:text-blue-400">ポートフォリオ</a>
-      <a href="#" class="hover:text-blue-400">私たちについて</a>
-      <a href="contact.html" class="hover:text-blue-400">お問い合わせ</a>
+  <header class="p-6 max-w-6xl mx-auto">
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-400">
+        <a href="/index.html">マッスルパパのスマイル工房</a>
+      </h1>
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+        ☰
+      </button>
+    </div>
+    <nav id="menu" class="mt-4 md:mt-0 md:flex space-y-2 md:space-y-0 md:space-x-6 text-sm font-medium hidden md:block">
+      <a href="/index.html" class="block hover:text-blue-400">ホーム</a>
+      <a href="#" class="block hover:text-blue-400">アプリ</a>
+      <a href="/blog.html" class="block hover:text-blue-400">ブログ</a>
+      <a href="#" class="block hover:text-blue-400">ポートフォリオ</a>
+      <a href="#" class="block hover:text-blue-400">私たちについて</a>
+      <a href="contact.html" class="block hover:text-blue-400">お問い合わせ</a>
     </nav>
   </header>
 
@@ -50,9 +54,17 @@
     </div>
     © {{ site.time | date: '%Y' }} マッスルパパのスマイル工房 All rights reserved.
   </footer>
-  <!-- Prism.js 本体 -->
+
+  <!-- Prism.js -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-  <!-- C# の構文定義 -->
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-csharp.min.js"></script>
+
+  <!-- ハンバーガーメニュー切替 -->
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
