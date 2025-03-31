@@ -5,21 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: "マッスルパパのスマイル工房" }}</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
-        extend: {},
+        extend: {
+          colors: {
+            primary: "#f97316", // 落ち着いたオレンジ
+            secondary: "#1e3a8a", // 深めのブルー
+            textDark: "#333", // ダークグレー
+            textLight: "#555", // 少し明るめのグレー
+          },
+        },
       },
-      plugins: [tailwindcss.typography],
-    }
+    };
   </script>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+      color: #333;
       line-height: 1.6; 
       padding: 2em; 
     }
@@ -27,47 +33,43 @@
     ol { list-style: decimal; margin-left: 1.5em; }
   </style>
 </head>
-<body class="bg-gray-950 text-white">
-  <header class="px-0 py-4 border-b border-white/10">
-    <div class="flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-blue-400 pb-2">
+<body>
+  <header class="bg-primary text-white px-6 py-4 flex justify-between items-center shadow-md rounded-xl">
+    <div class="flex items-center space-x-3">
+      <img src="/static/img/Icon_trim.webp" alt="アイコン" class="w-12 h-12 rounded-full">
+      <h1 class="text-2xl font-bold">
         <a href="/index.html">マッスルパパのスマイル工房</a>
       </h1>
-      <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
-        ☰
-      </button>
     </div>
-    <nav id="menu" class="mt-4 md:mt-0 md:flex space-y-2 md:space-y-0 md:space-x-6 text-sm font-medium hidden md:block">
-      <a href="/index.html" class="block hover:text-blue-400">ホーム</a>
-      <a href="#" class="block hover:text-blue-400">アプリ</a>
-      <a href="/blog.html" class="block hover:text-blue-400">ブログ</a>
-      <a href="#" class="block hover:text-blue-400">ポートフォリオ</a>
-      <a href="#" class="block hover:text-blue-400">私たちについて</a>
-      <a href="contact.html" class="block hover:text-blue-400">お問い合わせ</a>
-    </nav>
+    <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+      ☰
+    </button>
   </header>
 
-  <main class="px-0 py-10">
+  <nav id="menu" class="mt-4 bg-secondary text-white p-4 rounded-lg hidden md:flex justify-center space-x-6 text-lg font-semibold">
+    <a href="/index.html" class="hover:text-primary">ホーム</a>
+    <a href="#" class="hover:text-primary">アプリ</a>
+    <a href="/blog.html" class="hover:text-primary">ブログ</a>
+    <a href="#" class="hover:text-primary">ポートフォリオ</a>
+    <a href="#" class="hover:text-primary">私たちについて</a>
+    <a href="contact.html" class="hover:text-primary">お問い合わせ</a>
+  </nav>
+
+  <main class="p-6">
     {{ content }}
   </main>
 
-  <footer class="text-center text-gray-500 text-sm py-10">
+  <footer class="text-center text-gray-600 text-sm py-6">
     <div class="mb-2">
-      <a href="/privacy_jp.html" class="hover:text-blue-400">プライバシーポリシー</a><br>
-      <a href="/privacy_en.html" class="hover:text-blue-400">Privacy Policy</a>
+      <a href="/privacy_jp.html" class="hover:text-primary">プライバシーポリシー</a><br>
+      <a href="/privacy_en.html" class="hover:text-primary">Privacy Policy</a>
     </div>
     © {{ site.time | date: '%Y' }} マッスルパパのスマイル工房 All rights reserved.
   </footer>
 
-  <!-- Prism.js -->
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-csharp.min.js"></script>
-
-  <!-- ハンバーガーメニュー切替 -->
   <script>
     document.getElementById("menu-toggle").addEventListener("click", function () {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("hidden");
+      document.getElementById("menu").classList.toggle("hidden");
     });
   </script>
 </body>
