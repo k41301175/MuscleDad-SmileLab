@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: markdown
 title: Privacy Policy
 permalink: /privacy_en.html
 ---
 
-日本語は[こちら](privacy_jp.html)
+日本語は[こちら](privacy_jp.html)  
 
-## Privacy Policy
+## Privacy Policy  
 
 1. **Introduction**  
     This Privacy Policy explains how our company handles user information and related data in the game applications we develop and distribute (hereinafter referred to as "this app").  

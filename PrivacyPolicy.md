@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: markdown
 title: プライバシーポリシー
 permalink: /privacy_jp.html
 ---
 
-English page is [here](/privacy_en.html)
+English page is [here](/privacy_en.html)  
 
-## プライバシーポリシー
+## プライバシーポリシー  
 
 1. **はじめに**  
 本プライバシーポリシーは、弊社が開発・配信するゲームアプリ（以下「本アプリ」）における、利用者の個人情報および関連する情報の取り扱いについて説明するものです。  
