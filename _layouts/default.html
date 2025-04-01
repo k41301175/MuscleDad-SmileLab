@@ -27,13 +27,13 @@
       background-color: #fafafa;
       color: #333;
       line-height: 1.6; 
-      padding: 2em; 
+      /*padding: 2em;*/
     }
     h1, h2, h3 { font-weight: bold; margin-top: 1em; }
     ol { list-style: decimal; margin-left: 1.5em; }
   </style>
 </head>
-<body>
+<body class="p-0 sm:p-6">
   <header class="bg-primary text-white px-6 py-4 flex justify-between items-center shadow-md rounded-xl">
     <div class="flex items-center space-x-3">
       <img src="/static/img/Icon_trim.webp" alt="アイコン" class="w-12 h-12 rounded-full">
@@ -55,7 +55,7 @@
     <a href="contact.html" class="hover:text-primary">お問い合わせ</a>
   </nav>
 
-  <main class="p-6">
+  <main class="py-6">
     {{ content }}
   </main>
 
