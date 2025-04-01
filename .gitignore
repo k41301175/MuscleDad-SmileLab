@@ -2,3 +2,4 @@ _site
 .sass-cache
 Gemfile
 Gemfile.lock
+*_local.md
