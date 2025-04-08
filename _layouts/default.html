@@ -2,75 +2,30 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title | default: "マッスルパパのスマイル工房" }}</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#f97316", // 落ち着いたオレンジ
-            secondary: "#1e3a8a", // 深めのブルー
-            textDark: "#333", // ダークグレー
-            textLight: "#555", // 少し明るめのグレー
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #fafafa;
-      color: #333;
-      line-height: 1.6; 
-      /*padding: 2em;*/
-    }
-    h1, h2, h3 { font-weight: bold; margin-top: 1em; }
-    ol { list-style: decimal; margin-left: 1.5em; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サングラスの妖精@スマイル開発室</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/default.css">
+  <link rel="stylesheet" href="/static/css/rouge.css">
 </head>
-<body class="p-0 sm:p-6">
-  <header class="bg-primary text-white px-6 py-4 flex justify-between items-center shadow-md rounded-xl">
-    <div class="flex items-center space-x-3">
-      <img src="/static/img/Icon_trim.webp" alt="アイコン" class="w-12 h-12 rounded-full">
-      <h1 class="text-2xl font-bold">
-        <a href="/index.html">マッスルパパのスマイル工房</a>
-      </h1>
-    </div>
-    <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
-      ☰
-    </button>
-  </header>
+<body>
 
-  <nav id="menu" class="mt-4 bg-secondary text-white p-4 rounded-lg hidden md:flex justify-center space-x-6 text-lg font-semibold">
-    <a href="/index.html" class="hover:text-primary">ホーム</a>
-    <a href="#" class="hover:text-primary">アプリ</a>
-    <a href="/blog.html" class="hover:text-primary">ブログ</a>
-    <a href="#" class="hover:text-primary">ポートフォリオ</a>
-    <a href="#" class="hover:text-primary">私たちについて</a>
-    <a href="contact.html" class="hover:text-primary">お問い合わせ</a>
-  </nav>
+  {% include sidebar.html %}
 
-  <main class="py-6">
+  <main class="content">
     {{ content }}
   </main>
 
-  <footer class="text-center text-gray-600 text-sm py-6">
-    <div class="mb-2">
-      <a href="/privacy_jp.html" class="hover:text-primary">プライバシーポリシー</a><br>
-      <a href="/privacy_en.html" class="hover:text-primary">Privacy Policy</a>
+  <div class="twitter-fixed">
+    <a href="https://x.com/coding_at_gym" target="_blank">Twitter</a>
+  </div>
+  <footer class="footer">
+    <div class="links">
+      <a href="/privacy_jp.html">プライバシーポリシー</a><br>
+      <a href="/privacy_en.html">Privacy Policy</a><br>
     </div>
-    © {{ site.time | date: '%Y' }} マッスルパパのスマイル工房 All rights reserved.
-  </footer>
-
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      document.getElementById("menu").classList.toggle("hidden");
-    });
-  </script>
+    © {{ site.time | date: '%Y' }} サングラスの妖精@スマイル開発室<br>All rights reserved.
+  </footer>  
 </body>
 </html>

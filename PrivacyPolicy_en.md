@@ -46,4 +46,4 @@ permalink: /privacy_en.html
 
 7. **Contact Information**  
     For inquiries regarding this Privacy Policy, please contact us at:  
-    Email Address: contact@md-smile-lab.com  
+    Email Address: contact@md-smile-lab.com

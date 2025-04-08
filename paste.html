@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title | default: "マッスルパパのスマイル工房" }}</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#f97316", // 落ち着いたオレンジ
+            secondary: "#1e3a8a", // 深めのブルー
+            textDark: "#333", // ダークグレー
+            textLight: "#555", // 少し明るめのグレー
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6; 
+      /*padding: 2em;*/
+    }
+    h1, h2, h3 { font-weight: bold; margin-top: 1em; }
+    ol { list-style: decimal; margin-left: 1.5em; }
+  </style>
+</head>
+<body class="p-0 sm:p-6">
+  <header class="bg-primary text-white px-6 py-4 flex justify-between items-center shadow-md rounded-xl">
+    <div class="flex items-center space-x-3">
+      <img src="/static/img/Icon_trim.webp" alt="アイコン" class="w-12 h-12 rounded-full">
+      <h1 class="text-2xl font-bold">
+        <a href="/index.html">サングラスの妖精@スマイル開発室</a>
+      </h1>
+    </div>
+    <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+      ☰
+    </button>
+  </header>
+
+  <nav id="menu" class="mt-4 bg-secondary text-white p-4 rounded-lg hidden md:flex justify-center space-x-6 text-lg font-semibold">
+    <a href="/index.html" class="hover:text-primary">ホーム</a>
+    <a href="/app.html" class="hover:text-primary">アプリ</a>
+    <a href="/blog.html" class="hover:text-primary">ブログ</a>
+    <a href="#" class="hover:text-primary">ポートフォリオ</a>
+    <a href="#" class="hover:text-primary">私たちについて</a>
+    <a href="contact.html" class="hover:text-primary">お問い合わせ</a>
+  </nav>
+
+  <main class="py-6">
+    <section class="text-center py-16 px-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-3xl sm:text-5xl font-bold mb-4 leading-snug text-textDark">
+          子どもには学びと遊びを。<br>親にはひと息と筋トレの時間を。
+        </h2>
+        <p class="text-textLight max-w-xl mx-auto mb-8 text-base sm:text-lg leading-relaxed">
+          5分で夢中、15分で静寂。お絵描き・音・言葉で、子どもの感性を揺さぶる。<br>
+          育児のプロじゃないけど、開発は本気。<br>
+          そんなエンジニアが、アプリを作ってます。
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="apps.html" class="bg-primary hover:bg-orange-600 text-white py-3 px-6 rounded-lg shadow-md transition text-center">今すぐ遊べるアプリ</a>
+          <a href="portfolio.html" class="border border-gray-400 hover:border-primary hover:text-primary py-3 px-6 rounded-lg transition text-center">開発実績を見る</a>
+        </div>
+      </section>
+      
+      <section id="features" class="bg-white py-16 px-6 shadow-md rounded-lg mt-8">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 text-left">
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-primary">📱 <a href="#">子ども向けアプリ</a></h3>
+            <p class="text-textLight">「“これさえあれば静かになる”と評判の知育系」<br> → 遊びながら学べる、お絵描き・音ゲー・ちょっとヘンなミニゲームまで。</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-primary">🧠 <a href="/blog.html">技術ブログ</a></h3>
+            <p class="text-textLight">「技術書より熱い。父が綴るコードと育児のリアル」<br> → AI、Web技術、こどもと向き合うバグとの戦い。</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-primary">💼 <a href="#">ポートフォリオ</a></h3>
+            <p class="text-textLight">「子ども向けだけじゃ終わらせない」<br> → 裏では色々作ってます。意外と器用です。</p>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="text-center text-gray-600 text-sm py-6">
+    <div class="mb-2">
+      <a href="/privacy_jp.html" class="hover:text-primary">プライバシーポリシー</a><br>
+      <a href="/privacy_en.html" class="hover:text-primary">Privacy Policy</a>
+    </div>
+    © {{ site.time | date: '%Y' }} マッスルパパのスマイル工房 All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("menu").classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
