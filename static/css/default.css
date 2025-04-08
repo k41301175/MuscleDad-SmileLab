@@ -55,7 +55,7 @@ body {
 }
 
 .keyvisual {
-  background-image: url('/static/img/key_visual2.webp');
+  background-image: url('../img/key_visual2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

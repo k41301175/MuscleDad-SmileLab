@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: contact
 title: お問い合わせ
 permalink: /contact.html
 ---
