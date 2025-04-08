@@ -55,7 +55,7 @@ body {
 }
 
 .keyvisual {
-  background-image: url('/static/img/key_visual2.webp');
+  background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
