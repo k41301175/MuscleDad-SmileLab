@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<article class="max-w-3xl mx-auto px-4 py-12 prose">
-  <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
-  <p class="text-gray-500 text-sm mb-6">{{ page.date | date: "%Y年%m月%d日" }}</p>
-  <div class="prose max-w-3xl mx-auto">
-    {{ content }}
-  </div>
-</article>
+<div style="padding:20px;">
+  <article class="max-w-3xl mx-auto px-4 py-12 prose">
+    <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
+    <p class="text-gray-500 text-sm mb-6">{{ page.date | date: "%Y年%m月%d日" }}</p>
+    <div class="prose max-w-3xl mx-auto">
+      {{ content }}
+    </div>
+  </article>
+</div>
 
 <script src="/static/js/hide_sidebar.js"></script>

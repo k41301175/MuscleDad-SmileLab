@@ -1,12 +1,12 @@
 /* Rouge GitHub theme */
-.highlight { background: #080808; }
+.highlight { background: #1a2638; }
 .highlight .c { color: #998898; font-style: italic }  /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 }  /* Error */
-.highlight .k { color: #0000ff }  /* Keyword */
+.highlight .k { color: #ff8fa3 }  /* Keyword */
 .highlight .o { color: #000000 }  /* Operator */
 .highlight .cm { color: #999988; font-style: italic }  /* Comment.Multiline */
 .highlight .cp { color: #999999; font-weight: bold }  /* Comment.Preproc */
-.highlight .c1 { color: #999988; font-style: italic }  /* Comment.Single */
+.highlight .c1 { color: #8bdf4c; font-style: italic }  /* Comment.Single */
 .highlight .cs { color: #999999; font-weight: bold; font-style: italic }  /* Comment.Special */
 .highlight .gd { color: #000000; background-color: #ffdddd }  /* Generic.Deleted */
 .highlight .ge { font-style: italic }
@@ -23,19 +23,20 @@
 .highlight .kn { color: #0000ff }
 .highlight .kp { color: #0000ff }
 .highlight .kr { color: #0000ff }
-.highlight .kt { color: #445588 }
-.highlight .m { color: #009999 }
-.highlight .s { color: #d14 }  /* String */
+.highlight .kt { color: #ff8fa3 }
+.highlight .m { color: #a980f5 }
+.highlight .s { color: #ffc56d }  /* String */
+.highlight .n { color: #fff }
 .highlight .na { color: #008080 }
 .highlight .nb { color: #0086B3 }
-.highlight .nc { color: #37c147; font-weight: bold }  /* Class */
+.highlight .nc { color: #38c7ff; font-weight: bold }  /* Class */
 .highlight .no { color: #008080 }
 .highlight .nd { color: #3c5d5d }
 .highlight .ni { color: #800080 }
 .highlight .ne { color: #990000; font-weight: bold }
-.highlight .nf { color: #990000; font-weight: bold }  /* Function */
+.highlight .nf { color: #38c7ff; font-weight: bold }  /* Function */
 .highlight .nl { color: #990000; font-weight: bold }
-.highlight .nn { color: #fb00ea }
+.highlight .nn { color: #ebd247 }
 .highlight .nt { color: #000080 }
 .highlight .nv { color: #008080 }
 .highlight .ow { color: #0000ff; font-weight: bold }
