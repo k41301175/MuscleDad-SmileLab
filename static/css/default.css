@@ -21,6 +21,14 @@ body {
   padding-left: 30px;
   z-index: 1000;
 }
+
+/* スマホ画面（例：幅が768px以下）では全幅で表示する */
+@media (max-width: 768px) {  
+  .logo-img {
+    width: 30vw;
+    height: auto;
+  }
+}
   
 .sidebar a {
     /* 変更点：枠なし・背景なし */
@@ -46,8 +54,10 @@ body {
 }
 
 .logo-img {
-  width: 80%;
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto; /* 中央寄せしたい場合 */
 }
 
 .content {
