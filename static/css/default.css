@@ -71,27 +71,43 @@ body {
 }
 
 .keyvisual {
-  background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  aspect-ratio: 16 / 9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.keyvisual2 {
+  background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual2.webp');
+  aspect-ratio: 16 / 9;
+}
+
 .keyvisual3 {
   background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual3.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  aspect-ratio: 5 / 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  aspect-ratio: 5 / 1;
+}
+
+.keyvisual4 {
+  background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual4.webp');
+  aspect-ratio: 5 / 1;
+}
+
+.keyvisual5 {
+  background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual5.webp');
+  aspect-ratio: 3 / 1;
+}
+
+.keyvisual6 {
+  background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual6.webp');
+  aspect-ratio: 15 / 4;
+}
+
+.keyvisual7 {
+  background-image: url('https://raw.githubusercontent.com/k41301175/MuscleDad-SmileLab/refs/heads/main/static/img/Key_visual7.webp');
+  aspect-ratio: 5 / 1;
 }
 
 .profile {
@@ -161,4 +177,16 @@ body {
 
 .block {
   padding: 1em;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0.5em;
+  right: 1em;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
