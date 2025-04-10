@@ -11,18 +11,16 @@ title: ブログ
   </div>
 </section>
 
-<div class="prose max-w-3xl mx-auto">
-  <section class="max-w-3xl mx-auto px-4 py-12" style="padding-left: 220px;">
-    <ul class="space-y-6">
-      {% for post in site.posts %}
-        <li class="border-b border-gray-700 pb-4">
-          <a href="{{ post.url }}" class="text-2xl text-blue-400 hover:underline font-semibold block">
-            {{ post.title }}
-          </a>
-          <p class="text-gray-500 text-sm">{{ post.date | date: "%Y年%m月%d日" }}</p>
-          <p class="text-gray-400 mt-1">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>  
-</div>
+<section class="post-list">
+  <ul>
+    {% for post in site.posts %}
+      <li class="post-item">
+        <a href="{{ post.url }}" class="post-title">
+          {{ post.title }}
+        </a>
+        <p class="post-date">🗓 {{ post.date | date: "%Y年%m月%d日" }}</p>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
