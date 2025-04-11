@@ -60,6 +60,55 @@ body {
   margin: 0 auto; /* 中央寄せしたい場合 */
 }
 
+/* ハンバーガー初期状態（非表示） */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #00f9ff;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+/* ハンバーガーメニュー（非表示） */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  z-index: 1100;
+}
+
+.mobile-menu a {
+  color: #00f9ff;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.mobile-menu a:hover {
+  color: #006e7a;
+}
+
+/* スマホ画面時の切り替え */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 .content {
   width: 100%;
 }
@@ -192,7 +241,6 @@ body {
 }
 
 .post-list {
-  padding-left: 120px;
   background-color: #111;
   color: #f0f0f0;
   font-family: 'Segoe UI', sans-serif;
@@ -202,6 +250,7 @@ body {
   list-style: none;
   padding: 0;
   margin-top: 20px;
+  margin-left: 10%;
   margin-right: 10%;
 }
 
