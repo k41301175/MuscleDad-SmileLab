@@ -68,8 +68,8 @@ body {
   border: none;
   color: #00f9ff;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 0em;
+  left: 0em;
   z-index: 1100;
   cursor: pointer;
 }
@@ -80,11 +80,11 @@ body {
   flex-direction: column;
   background-color: #111;
   position: fixed;
-  top: 60px;
-  left: 20px;
+  top: 0.5em;
+  left: 0.5em;
   padding: 1rem;
   border-radius: 0.5rem;
-  z-index: 1100;
+  z-index: 1101;
 }
 
 .mobile-menu a {
@@ -96,6 +96,18 @@ body {
 
 .mobile-menu a:hover {
   color: #006e7a;
+}
+
+/* 背景オーバーレイ（黒半透明） */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1100;
 }
 
 /* スマホ画面時の切り替え */
