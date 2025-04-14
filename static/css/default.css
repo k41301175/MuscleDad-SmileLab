@@ -341,6 +341,11 @@ body {
   min-height: 460px; /* 必要に応じて調整 */
 }
 
+.grid-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #0ff9;
+}
+
 .grid-item .text-block {
   flex-grow: 1;
   display: flex;
