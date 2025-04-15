@@ -6,6 +6,7 @@ include:
   - README.md
   - PrivacyPolicy.md
   - PrivacyPolicy_en.md
+  - AssetPolicy.md
   - _posts
 
 kramdown:

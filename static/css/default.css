@@ -391,3 +391,8 @@ body {
   object-fit: contain;
   vertical-align: middle;
 }
+
+.markdown-container {
+  margin-left: 20%;
+  margin-right: 10%;
+}
